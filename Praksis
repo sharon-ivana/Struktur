@@ -1,0 +1,25 @@
+def struktur_praksis(b):
+
+  tb = 1/15 * b * 100
+  lb = tb / 2
+  k = lb
+  K = k**2
+  r = math.sqrt(K / math.pi) 
+  d = r*2
+
+  print("bentangan:", b, "m")
+  print("tinggi balok praksis:", tb, "cm")
+  print("lebar balok praksis:", lb, "cm")
+  print("sisi kolom kotak praksis:", k, "cm")
+  # print("luas kolom kotak:", K, "cm")
+  print("radius kolom lingkaran praksis:", r, "cm")
+  print("diameter kolom lingkaran praksis:", d, "cm")
+
+  return {
+      "tb": tb,
+      "lb": lb,
+      "k": k,
+      "K": K,
+      "r": r,
+      "d": d
+  }
