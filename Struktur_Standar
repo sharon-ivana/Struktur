@@ -1,0 +1,27 @@
+import math
+
+def struktur_utama(b):
+
+  tb = 1/12 * b * 100
+  lb = tb / 2
+  k = lb + 10
+  K = k**2
+  r = math.sqrt(K / math.pi)
+  d = r*2
+
+  print("bentangan:", b, "m")
+  print("tinggi balok utama:", tb, "cm")
+  print("lebar balok utama:", lb, "cm")
+  print("sisi kolom kotak utama:", k, "cm")
+  # print("luas kolom kotak:", K, "cm")
+  print("radius kolom lingkaran utama:", r, "cm")
+  print("diameter kolom lingkaran utama:", d, "cm")
+
+  return {
+      "tb": tb,
+      "lb": lb,
+      "k": k,
+      "K": K,
+      "r": r,
+      "d": d
+  }
